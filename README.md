@@ -116,3 +116,44 @@ This match is a clear example of:
 ---
 
 ## 📊 Project Structure
+📁 chelsea-vs-tottenham-analysis
+│
+├── data/
+│ └── match_shot_data.csv
+│
+├── notebooks/
+│ └── analysis.ipynb
+│
+├── visuals/
+│ ├── shot_map.png
+│ ├── heatmap.png
+│ └── xg_analysis.png
+│
+├── README.md
+└── requirements.txt
+
+
+---
+
+## 🚀 Future Improvements
+
+- Interactive Streamlit dashboard
+- Player comparison tool (xG radar charts)
+- Pass network analysis
+- Expected threat (xT) modeling
+- Multi-match analysis pipeline
+
+---
+
+## 👤 Author
+
+Built by a football data analyst passionate about turning match data into tactical insights.
+
+---
+
+## ⭐ If you like this project
+
+Feel free to:
+- Star the repository ⭐
+- Fork it 🍴
+- Use it for your own football analysis projects ⚽
