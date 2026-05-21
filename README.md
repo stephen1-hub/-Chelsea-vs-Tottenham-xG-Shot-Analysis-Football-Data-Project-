@@ -142,3 +142,43 @@ This match highlights the classic trade-off between:
 ---
 
 ## 📁 8. Project Structure
+chelsea-vs-tottenham-analysis/
+│
+├── data/
+│ └── match_shot_data.csv
+│
+├── notebooks/
+│ └── analysis.ipynb
+│
+├── visuals/
+│ ├── shot_map.png
+│ ├── heatmap.png
+│ └── xg_analysis.png
+│
+├── README.md
+└── requirements.txt
+
+
+---
+
+## 🚀 9. Future Improvements
+
+- Interactive Streamlit dashboard  
+- Player comparison tool (xG radar charts)  
+- Pass network analysis  
+- Expected Threat (xT) modeling  
+- Multi-match tactical comparison  
+
+---
+
+## 👤 Author
+
+Built by a football data analyst focused on turning match data into tactical insight and storytelling.
+
+---
+
+## ⭐ If you like this project
+
+- Star the repository ⭐  
+- Fork it 🍴  
+- Use it in your own football analytics work ⚽  
