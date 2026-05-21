@@ -145,7 +145,7 @@ This match highlights the classic trade-off between:
 chelsea-vs-tottenham-analysis/
 │
 ├── data/
-│ └── match_shot_data.csv
+│ └── Chelsea vs Tottenham.csv
 │
 ├── notebooks/
 │ └── analysis.ipynb
