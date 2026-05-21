@@ -1,0 +1,15 @@
+chelsea-vs-tottenham-analysis/
+│
+├── data/
+│ └── match_shot_data.csv
+│
+├── notebooks/
+│ └── analysis.ipynb
+│
+├── visuals/
+│ ├── shot_map.png
+│ ├── heatmap.png
+│ └── xg_analysis.png
+│
+├── README.md
+└── requirements.txt
