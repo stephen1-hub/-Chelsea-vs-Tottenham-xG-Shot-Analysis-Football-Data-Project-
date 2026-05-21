@@ -1,7 +1,7 @@
 chelsea-vs-tottenham-analysis/
 │
 ├── data/
-│ └── match_shot_data.csv
+│ └── Chelsea vs Tottenham.csv
 │
 ├── notebooks/
 │ └── analysis.ipynb
