@@ -1,159 +1,128 @@
-# ⚽ Chelsea vs Tottenham — xG & Shot Analysis (Football Data Project)
+# Chelsea vs Tottenham — xG Tactical Analysis (Football Data Project)
 
-A data-driven football analytics project analyzing the Premier League match between **Chelsea F.C.** and **Tottenham Hotspur F.C.** using expected goals (xG), shot location data, and player-level performance insights.
+A data-driven football analytics project analyzing the Premier League match between Chelsea F.C. and Tottenham Hotspur F.C. using expected goals (xG), shot location data, and player-level performance insights.
 
 This project focuses on moving beyond the scoreline to understand:
 
-> Who created better chances, who executed better, and how the match was actually decided.
+Who created better chances, who executed better, and how the match was actually decided.
 
----
+# 1. Objective
+Analyze chance quality (xG) vs shot volume
+Evaluate attacking efficiency under pressure
+Understand shot location patterns and spatial dominance
+Identify key player contributions in decisive moments
+Compare process vs execution in match outcome
+# 2. Data Used
+Event-level shot dataset
+xG values per shot
+Shot coordinates (X, Y) mapped to pitch
+Shot outcomes (Goal, Saved, Blocked, Missed, Post)
+Player-level contribution metrics
+Situation types:
+Open Play
+Set Pieces
+Direct Free Kicks
+Corners
 
-## 📊 Project Overview
+Tools:
 
-This analysis breaks down the match using event-level shot data to evaluate:
+Python (Pandas, Matplotlib, Seaborn)
+mplsoccer (pitch visualisation)
+Spatial coordinate transformation
+# 3. Key Findings
+⚔️ xG Battle
+Chelsea: ~1.09
+Tottenham: ~2.24
 
-- Shot quality (xG)
-- Shot locations (X, Y pitch coordinates)
-- Player contribution
-- Finishing efficiency
-- Attack patterns by situation (open play, set pieces, etc.)
+👉 Tottenham created significantly higher-quality chances.
 
-The goal is to translate raw football data into tactical and performance insights.
+🎯 Chance Quality vs Execution
+Tottenham: Better box entries + higher xG shots
+Chelsea: Fewer chances but more clinical finishing moments
 
----
+👉 Match = process dominance vs execution efficiency
 
-## 🧠 Key Insights
+👟 Key Player Impact
+Richarlison → 0.71 xG goal (elite chance conversion)
+James Maddison → 0.49 xG blocked shot (big missed chance)
+Andrey Santos → 0.61 xG goal (clinical finish)
+Enzo Fernández → low xG goal (~0.016 overperformance)
 
-### ⚔️ xG Comparison
-- Chelsea xG: **~1.09**
-- Tottenham xG: **~2.24**
+👉 Tottenham dominated creation, Chelsea dominated key moments.
 
-👉 Tottenham created significantly better chances overall, despite similar shot volume.
+# 4. Visuals
 
----
+This project includes:
 
-### 🎯 Shot Quality vs Shot Volume
-- Both teams had similar shot counts
-- Tottenham generated higher **xG per shot**
-- Chelsea relied on fewer but more decisive moments
+⚽ Shot map (xG intensity overlay)
+📍 Pitch heatmaps (attacking zones)
+👟 Player shot distributions
+📊 Shot outcome breakdown
+🧠 Situation-based xG analysis
 
-👉 Match = **chance quality vs clinical execution**
+Key visual insight:
 
----
+Tottenham = dense central box activity
+Chelsea = scattered, lower-density shot profile
+# 5. Tactical Implications
+Tottenham Hotspur F.C.
+Strong central penetration
+High xG chance creation
+Repeated access to dangerous zones
+BUT inefficient finishing under pressure
+Chelsea F.C.
+Lower attacking volume
+Reliance on individual moments
+Overperformance in finishing
+Limited sustained pressure
+$ 6. Actionable Recommendations
+Tottenham:
+Improve finishing efficiency in high-xG zones
+Focus on composure in box situations
+Convert ≥0.3 xG chances at higher rate
+Chelsea:
+Improve chance creation structure
+Increase central progression
+Reduce reliance on low-xG shots
+# 7. Conclusion
 
-### 👟 Player Impact
-
-Key performers:
-
-- 🔴 :contentReference[oaicite:0]{index=0} — highest xG chance (0.71 goal)
-- ⚪ :contentReference[oaicite:1]{index=1} — missed a 0.49 xG big chance
-- 🔵 :contentReference[oaicite:2]{index=2} — clinical 0.61 xG goal
-- 🔵 :contentReference[oaicite:3]{index=3} — scored from extremely low xG (0.016)
-
-👉 Tottenham dominated chance creation, Chelsea dominated finishing efficiency.
-
----
-
-### 📍 Shot Location Analysis
-- Tottenham shots concentrated in central penalty box zones
-- Chelsea shots more scattered and lower quality
-- High-value chances came from central attacking positions
-
-👉 Spatial dominance = Tottenham
-
----
-
-### ⚽ Shot Type Efficiency
-- Left foot: highest xG/shot (0.25)
-- Right foot: most frequent but lower quality (0.15)
-- Headers: moderate efficiency (0.19)
-
-👉 Positioning mattered more than shot type
-
----
-
-### 🧩 Situation-Based xG
-- Open play → dominant source of xG (~80%+)
-- Set pieces → minimal impact
-- Free kicks → low conversion efficiency
-
-👉 Match was decided in open play transitions
-
----
-
-## 🛠️ Tools & Technologies
-
-- Python 🐍
-- Pandas
-- Matplotlib
-- Seaborn
-- mplsoccer ⚽
-- Football xG modeling concepts
-- Spatial coordinate transformation (pitch mapping)
-
----
-
-## 📈 Visualizations Included
-
-- Shot map (xG intensity)
-- Heatmaps of attacking zones
-- Player-level shot breakdown
-- Situation-based xG distribution
-- Shot outcome analysis
-
----
-
-## 📌 Key Football Insight
-
-> Tottenham created better chances.  
-> Chelsea finished better moments.
+Tottenham controlled the process.
+Chelsea controlled the moments.
 
 This match is a clear example of:
 
-- **Process (Tottenham) vs Execution (Chelsea)**
-- **Chance quality vs conversion efficiency**
+⚔️ Process (Tottenham) vs Execution (Chelsea)
 
----
-
-## 📊 Project Structure
+Tottenham created better chances
+Chelsea finished more decisive moments
+Outcome decided by fine margins in attacking efficiency
+📁 Project Structure
 📁 chelsea-vs-tottenham-analysis
 │
 ├── data/
-│ └── match_shot_data.csv
+│   └── match_shot_data.csv
 │
 ├── notebooks/
-│ └── analysis.ipynb
+│   └── analysis.ipynb
 │
 ├── visuals/
-│ ├── shot_map.png
-│ ├── heatmap.png
-│ └── xg_analysis.png
+│   ├── shot_map.png
+│   ├── heatmap.png
+│   └── xg_analysis.png
 │
 ├── README.md
 └── requirements.txt
+# Future Improvements
+Interactive Streamlit dashboard
+Player comparison tool (xG radar charts)
+Pass network analysis
+Expected Threat (xT) modeling
+Multi-match tactical comparison
+# Author
 
+Built by a football data analyst focused on turning match data into tactical insight and storytelling.
 
----
-
-## 🚀 Future Improvements
-
-- Interactive Streamlit dashboard
-- Player comparison tool (xG radar charts)
-- Pass network analysis
-- Expected threat (xT) modeling
-- Multi-match analysis pipeline
-
----
-
-## 👤 Author
-
-Built by a football data analyst passionate about turning match data into tactical insights.
-
----
-
-## ⭐ If you like this project
-
-Feel free to:
-- Star the repository ⭐
-- Fork it 🍴
-- Use it for your own football analysis projects ⚽
+⭐ If you like this project
+Star the repository ⭐
+Fork it 🍴
+Use it for your own football analytics work ⚽
