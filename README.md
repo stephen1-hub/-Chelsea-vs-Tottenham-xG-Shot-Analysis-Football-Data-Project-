@@ -84,7 +84,7 @@ This project goes beyond the scoreline to understand:
 - 👟 Player shot distribution maps  
 - 📊 Shot outcome breakdown  
 - 🧠 Situation-based xG analysis  
-<img width="1598" height="769" alt="image" src="https://github.com/user-attachments/assets/7bd8299b-8ddb-4e56-a065-0b60c0705d4e" />
+<img width="1591" height="765" alt="image" src="https://github.com/user-attachments/assets/777f8479-b72d-4927-8670-e25045bb6213" />
 
 
 ### Key Insight
